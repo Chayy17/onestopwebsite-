@@ -60,7 +60,6 @@ All photos are in the `images` folder. The easiest way to swap a photo is to **u
 | `before-1.jpg`, `after-1.jpg` | Job #1 before & after | Landscape (wide), about 1200 × 900 |
 | `before-2.jpg`, `after-2.jpg` | Job #2 before & after | Same |
 | `before-3.jpg`, `after-3.jpg` | Job #3 before & after | Same |
-| `hero.jpg` | Big background photo at the top: your truck or crew | Wide, about 1600 × 1000 |
 | `og-image.jpg` | The preview picture when someone shares your link on Facebook or by text | Exactly 1200 × 630 |
 
 **How to upload:**
