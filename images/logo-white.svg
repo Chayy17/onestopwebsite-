@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 120" width="500" height="120" role="img" aria-labelledby="t">
+  <title id="t">One Stop Property Solutions</title>
+  <!-- White version for dark backgrounds (footer, dark truck paint) -->
+  <!-- Icon: house with a box truck inside -->
+  <g transform="translate(6 8) scale(1.04)">
+    <path d="M20 47 L50 21 L80 47 V90 H20 Z" fill="#FFFFFF"/>
+    <path d="M9 49 L50 13 L91 49" fill="none" stroke="#F7801F" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="26" y="56" width="27" height="21" rx="2" fill="#0B2545"/>
+    <path d="M55 62 H65 L73 70 V77 H55 Z" fill="#0B2545"/>
+    <path d="M58 65 H64 L68.5 69.5 H58 Z" fill="#FFFFFF"/>
+    <circle cx="35" cy="79" r="5.5" fill="#0B2545" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="64" cy="79" r="5.5" fill="#0B2545" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+  <!-- Wordmark (textLength keeps the two lines the same width with any fallback font) -->
+  <text x="124" y="63" textLength="366" lengthAdjust="spacingAndGlyphs" font-family="Montserrat, 'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="52" fill="#FFFFFF">ONE STOP</text>
+  <text x="125" y="98" textLength="364" lengthAdjust="spacingAndGlyphs" font-family="Montserrat, 'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="24" fill="#F7801F">PROPERTY SOLUTIONS</text>
+</svg>
