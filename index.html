@@ -42,9 +42,10 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- LocalBusiness schema: helps Google show your business in local search results.
        TODO: Update telephone, email, openingHoursSpecification, and sameAs (social links) below. -->
@@ -127,171 +128,188 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- ============ 1. HEADER ============ -->
+  <!-- ============ HEADER ============ -->
   <header class="site-header" id="top">
     <div class="container header-inner">
       <a href="#top" class="brand" aria-label="One Stop Property Solutions home">
         <img src="images/logo.svg" alt="One Stop Property Solutions logo" width="500" height="120">
       </a>
 
-      <nav class="main-nav" id="main-nav" aria-label="Main">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#how-it-works">How It Works</a></li>
-          <li><a href="#gallery">Before &amp; After</a></li>
-          <li><a href="#realtors">Realtors</a></li>
-          <li><a href="#what-we-take">What We Take</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li class="nav-quote"><a href="#quote" class="btn btn-primary">Free Quote</a></li>
-        </ul>
+      <nav class="main-nav" aria-label="Main">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#services">Services</a>
+        <a href="#realtors">Realtors</a>
+        <a href="#faq">FAQ</a>
       </nav>
 
-      <!-- TODO: Replace +12815550123 and (281) 555-0123 with your real phone number -->
-      <a href="tel:+12815550123" class="btn btn-primary header-call">
-        <svg aria-hidden="true" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
-        <span class="call-label">Call Now</span>
-        <span class="call-number">(281) 555-0123</span>
-      </a>
-
-      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+      <div class="header-actions">
+        <a href="#quote" class="btn btn-dark btn-sm header-quote">Get a Quote</a>
+        <!-- TODO: Replace +12815550123 and (281) 555-0123 with your real phone number -->
+        <a href="tel:+12815550123" class="btn btn-orange btn-sm">
+          <svg aria-hidden="true" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          <span class="phone-full">(281) 555-0123</span><span class="phone-short">Call</span>
+        </a>
+      </div>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- ============ 2. HERO ============ -->
+    <!-- ============ HERO: one headline, one sentence, one ZIP box ============ -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <p class="eyebrow eyebrow-light">Junk Removal &amp; Property Cleanouts · Deer Park, TX</p>
-          <h1 id="hero-title">Junk Gone. Same Day. <span class="accent">No Stress.</span></h1>
-          <p class="hero-sub">Fast, affordable junk removal and property cleanouts for homes and businesses in Deer Park, Pasadena, La Porte, Baytown and all of Houston. Upfront pricing. We do all the lifting and sweep up when we're done.</p>
-          <div class="hero-buttons">
-            <a href="#quote" class="btn btn-primary btn-lg">Get a Free Quote</a>
-            <!-- TODO: Replace +12815550123 with your real cell number (the one that gets texts) -->
-            <a href="sms:+12815550123?&amp;body=Hi!%20I'd%20like%20a%20junk%20removal%20quote.%20Here's%20a%20photo%3A" class="btn btn-outline-light btn-lg">
-              <svg aria-hidden="true" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H8l-4 4V6a2 2 0 0 1 2-2zm3 6a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01z"/></svg>
-              Text Us a Photo
-            </a>
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-copy">
+            <h1 id="hero-title">Junk Removal Across Deer Park &amp; Houston</h1>
+            <p class="hero-sub">Junk gone. Same day. No stress. Enter your ZIP code to get a free, upfront quote.</p>
+
+            <form class="zip-form" data-zip-form action="#quote" novalidate>
+              <label for="hero-zip" class="visually-hidden">ZIP code</label>
+              <input id="hero-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="ZIP code">
+              <button type="submit" class="btn btn-dark">Get My Quote</button>
+            </form>
+            <p class="zip-msg" role="status" aria-live="polite"></p>
+
+            <!-- TODO: phone number (the one that gets texts) -->
+            <p class="hero-alt">or <a href="sms:+12815550123?&amp;body=Hi!%20I'd%20like%20a%20junk%20removal%20quote.%20Here's%20a%20photo%3A">text us a photo</a> for a quote in minutes</p>
           </div>
-          <ul class="hero-trust">
-            <li>✔ Same-day &amp; next-day service</li>
-            <li>✔ Upfront, no-surprise pricing</li>
-            <li>✔ Licensed &amp; insured</li> <!-- TODO: Remove this line if it doesn't apply to you -->
-            <li>✔ Local Deer Park business</li>
-          </ul>
+          <!-- TODO: Replace images/hero.jpg with a photo of your truck or crew on a job (landscape, about 1200x900). -->
+          <img class="hero-photo" src="images/hero.jpg" alt="One Stop Property Solutions crew loading junk into the truck in Deer Park TX" width="1200" height="900" fetchpriority="high">
         </div>
       </div>
     </section>
 
-    <!-- ============ 3. SERVICES ============ -->
-    <section class="section" id="services" aria-labelledby="services-title">
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="section" id="how-it-works" aria-labelledby="how-title">
       <div class="container">
-        <p class="eyebrow">What We Do</p>
-        <h2 id="services-title">Junk Removal &amp; Cleanout Services in Deer Park &amp; Houston</h2>
-        <p class="section-intro">One call handles it all. From a single couch to a full house, we haul it, load it and leave the space broom-clean.</p>
-
-        <div class="card-grid three">
-          <article class="card service-card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M6 22 24 7l18 15" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M11 19v22h26V19" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><rect x="20" y="28" width="8" height="13" fill="currentColor"/></svg>
-            </div>
-            <h3>Residential Junk Removal</h3>
-            <p>Old furniture, appliances, mattresses, garage and attic clutter, yard waste. Point to it and it's gone. Perfect for spring cleaning, remodels and moves.</p>
-            <a href="#quote" class="card-link">Get a residential quote →</a>
-          </article>
-
-          <article class="card service-card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><rect x="8" y="6" width="22" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="4"/><path d="M30 18h10v24H30" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M14 13h4m4 0h2M14 20h4m4 0h2M14 27h4m4 0h2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><rect x="16" y="34" width="6" height="8" fill="currentColor"/></svg>
-            </div>
-            <h3>Commercial Junk Removal</h3>
-            <p>Office furniture, retail fixtures, warehouse clear-outs and construction debris. Flexible scheduling around your business hours, so there's no downtime.</p>
-            <a href="#quote" class="card-link">Get a commercial quote →</a>
-          </article>
-
-          <article class="card service-card">
-            <div class="card-icon" aria-hidden="true">
-              <svg viewBox="0 0 48 48"><path d="M6 16h36v26H6z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M4 16 10 6h28l6 10" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/><path d="M18 26h12" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Full Property Cleanouts</h3>
-            <p>Estates, rentals, foreclosures, evictions, move-outs, garages and sheds. We empty the whole property, top to bottom, and leave it ready to list, rent or sell.</p>
-            <a href="#quote" class="card-link">Get a cleanout quote →</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 4. HOW IT WORKS ============ -->
-    <section class="section section-gray" id="how-it-works" aria-labelledby="how-title">
-      <div class="container">
-        <p class="eyebrow">Easy as 1-2-3</p>
-        <h2 id="how-title">How It Works</h2>
+        <h2 id="how-title" class="center">Say Goodbye to Your Junk</h2>
+        <p class="section-intro center">Three easy steps. We do all the heavy lifting.</p>
 
         <ol class="steps">
-          <li class="step">
-            <span class="step-num" aria-hidden="true">1</span>
+          <li>
+            <svg class="step-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="9" width="22" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="17" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 9l2-3h6l2 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
             <h3>Send a Photo or Call</h3>
-            <p>Text us a picture of what needs to go, fill out the quote form, or just give us a call.</p>
+            <p>Text us a picture, fill out the quick form, or give us a call.</p>
           </li>
-          <li class="step">
-            <span class="step-num" aria-hidden="true">2</span>
-            <h3>Get an Upfront Quote</h3>
-            <p>We'll give you a clear price before we start. No hidden fees, no surprises.</p>
+          <li>
+            <svg class="step-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16V6h10l12 12-10 10L5 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="11" cy="12" r="2" fill="currentColor"/></svg>
+            <h3>Get an Upfront Price</h3>
+            <p>A clear quote before we start. No hidden fees, no surprises.</p>
           </li>
-          <li class="step">
-            <span class="step-num" aria-hidden="true">3</span>
+          <li>
+            <svg class="step-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="9" width="16" height="13" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M19 13h5l5 5v4H19z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="24" r="2.5" fill="#fff" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="2.5" fill="#fff" stroke="currentColor" stroke-width="2"/></svg>
             <h3>We Haul It &amp; Sweep Up</h3>
-            <p>Our crew does all the heavy lifting, loads the truck and leaves the area clean.</p>
+            <p>We load everything and leave the space clean.</p>
           </li>
         </ol>
+      </div>
+    </section>
 
-        <div class="center-cta">
-          <a href="sms:+12815550123" class="btn btn-primary btn-lg">Text Us a Photo Now</a> <!-- TODO: phone number -->
+    <!-- ============ REVIEWS ============ -->
+    <!--
+      TODO: These are SAMPLE reviews. Replace them with real reviews from your customers
+      (copy them from Google or Facebook with permission), then delete each
+      <span class="sample-tag">Sample review</span> line.
+      Never publish made-up reviews. It's against FTC rules and Google's policies.
+    -->
+    <section class="section section-soft" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 id="reviews-title" class="center">What Our Neighbors Say</h2>
+
+        <div class="reviews">
+          <figure class="review">
+            <span class="sample-tag">Sample review</span>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Placeholder: they came the same day I called and cleared my whole garage in under two hours."</blockquote>
+            <figcaption>– Customer, Deer Park</figcaption>
+          </figure>
+          <figure class="review">
+            <span class="sample-tag">Sample review</span>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Placeholder: needed an estate emptied before listing photos. Done in one day, broom-clean."</blockquote>
+            <figcaption>– Realtor, Houston</figcaption>
+          </figure>
+          <figure class="review">
+            <span class="sample-tag">Sample review</span>
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>"Placeholder: texted a few photos, got a price in minutes, and the rental was ready that weekend."</blockquote>
+            <figcaption>– Property Manager, Pasadena</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- ============ 5. BEFORE & AFTER ============ -->
-    <!--
-      TODO: Replace the placeholder photos in the /images folder with real job photos.
-      Keep the same file names (before-1.jpg / after-1.jpg, etc.) and they'll show up automatically.
-      Tip: take the before & after from the SAME spot and angle so the slider lines up.
-      Update each alt text below to describe the real job (e.g. "Garage in Pasadena TX full of boxes").
-    -->
-    <section class="section" id="gallery" aria-labelledby="gallery-title">
-      <div class="container">
-        <p class="eyebrow">Real Results</p>
-        <h2 id="gallery-title">Before &amp; After</h2>
-        <p class="section-intro">Drag the slider to see the difference. These are the kinds of jobs we handle every week around Deer Park and Houston.</p>
+    <!-- ============ SERVICES + WHAT WE TAKE ============ -->
+    <section class="section" id="services" aria-labelledby="services-title">
+      <div class="container split">
+        <div>
+          <h2 id="services-title">We Take Almost Everything</h2>
+          <!-- TODO: Adjust the "can't take" items to match what you can legally haul. -->
+          <p class="section-intro">Furniture, appliances, mattresses, hot tubs, yard and construction debris, and whole-house cleanouts. Just no hazardous materials (paint, chemicals, fuel, asbestos).</p>
 
-        <div class="gallery-grid">
-          <figure class="ba">
-            <div class="ba-slider" style="--pos: 50%">
-              <img src="images/after-1.jpg" alt="After: empty, swept garage in Deer Park TX after junk removal" width="1200" height="900" loading="lazy" decoding="async" class="ba-after">
-              <img src="images/before-1.jpg" alt="Before: garage in Deer Park TX packed with boxes and old furniture" width="1200" height="900" loading="lazy" decoding="async" class="ba-before">
-              <span class="ba-label ba-label-before" aria-hidden="true">Before</span>
-              <span class="ba-label ba-label-after" aria-hidden="true">After</span>
-              <span class="ba-handle" aria-hidden="true"></span>
-              <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare before and after: garage cleanout">
+          <div class="service">
+            <h3>Residential Junk Removal</h3>
+            <p>Couches, appliances, garage and attic clutter, yard waste.</p>
+            <div class="btn-row">
+              <a href="#quote" class="btn btn-dark btn-sm" data-service="Residential junk removal">Get a Quote</a>
+              <a href="tel:+12815550123" class="btn btn-orange btn-sm">(281) 555-0123</a> <!-- TODO: phone number -->
             </div>
-            <figcaption>Garage cleanout · Deer Park</figcaption> <!-- TODO: describe the real job -->
-          </figure>
+          </div>
+          <div class="service">
+            <h3>Commercial Junk Removal</h3>
+            <p>Offices, retail spaces, warehouses and job sites.</p>
+            <div class="btn-row">
+              <a href="#quote" class="btn btn-dark btn-sm" data-service="Commercial junk removal">Get a Quote</a>
+              <a href="tel:+12815550123" class="btn btn-orange btn-sm">(281) 555-0123</a> <!-- TODO: phone number -->
+            </div>
+          </div>
+          <div class="service">
+            <h3>Property Cleanouts</h3>
+            <p>Estates, rentals, foreclosures, move-outs, garages and sheds.</p>
+            <div class="btn-row">
+              <a href="#quote" class="btn btn-dark btn-sm" data-service="Property cleanout">Get a Quote</a>
+              <a href="tel:+12815550123" class="btn btn-orange btn-sm">(281) 555-0123</a> <!-- TODO: phone number -->
+            </div>
+          </div>
+        </div>
 
+        <!--
+          BEFORE & AFTER
+          TODO: Replace images/before-1.jpg and images/after-1.jpg with a real job.
+          Keep the same file names. Take both photos from the SAME spot so the slider lines up.
+          Update the alt text and caption to describe the real job.
+        -->
+        <figure class="ba">
+          <div class="ba-slider" style="--pos: 50%">
+            <img src="images/after-1.jpg" alt="After: empty, swept garage in Deer Park TX after junk removal" width="1200" height="900" loading="lazy" decoding="async" class="ba-after">
+            <img src="images/before-1.jpg" alt="Before: garage in Deer Park TX packed with boxes and old furniture" width="1200" height="900" loading="lazy" decoding="async" class="ba-before">
+            <span class="ba-label ba-label-before" aria-hidden="true">Before</span>
+            <span class="ba-label ba-label-after" aria-hidden="true">After</span>
+            <span class="ba-handle" aria-hidden="true"></span>
+            <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare before and after: garage cleanout">
+          </div>
+          <figcaption>Drag to compare · Garage cleanout, Deer Park</figcaption> <!-- TODO: describe the real job -->
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MORE BEFORE & AFTER ============ -->
+    <!-- TODO: Replace before-2/after-2 and before-3/after-3 in the images folder with real jobs. -->
+    <section class="section section-soft" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <h2 id="gallery-title" class="center">Before &amp; After</h2>
+        <div class="gallery">
           <figure class="ba">
             <div class="ba-slider" style="--pos: 50%">
-              <img src="images/after-2.jpg" alt="After: clean, empty rental house living room in Pasadena TX ready to rent" width="1200" height="900" loading="lazy" decoding="async" class="ba-after">
-              <img src="images/before-2.jpg" alt="Before: rental house living room in Pasadena TX full of left-behind furniture and trash" width="1200" height="900" loading="lazy" decoding="async" class="ba-before">
+              <img src="images/after-2.jpg" alt="After: clean, empty rental living room in Pasadena TX ready to rent" width="1200" height="900" loading="lazy" decoding="async" class="ba-after">
+              <img src="images/before-2.jpg" alt="Before: rental living room in Pasadena TX full of left-behind furniture and trash" width="1200" height="900" loading="lazy" decoding="async" class="ba-before">
               <span class="ba-label ba-label-before" aria-hidden="true">Before</span>
               <span class="ba-label ba-label-after" aria-hidden="true">After</span>
               <span class="ba-handle" aria-hidden="true"></span>
               <input type="range" min="0" max="100" value="50" class="ba-range" aria-label="Drag to compare before and after: rental move-out cleanout">
             </div>
-            <figcaption>Rental move-out cleanout · Pasadena</figcaption> <!-- TODO: describe the real job -->
+            <figcaption>Rental move-out · Pasadena</figcaption> <!-- TODO: describe the real job -->
           </figure>
-
           <figure class="ba">
             <div class="ba-slider" style="--pos: 50%">
               <img src="images/after-3.jpg" alt="After: backyard in La Porte TX cleared of debris and old shed contents" width="1200" height="900" loading="lazy" decoding="async" class="ba-after">
@@ -307,254 +325,145 @@
       </div>
     </section>
 
-    <!-- ============ 6. REALTORS & PROPERTY MANAGERS ============ -->
-    <section class="section section-navy" id="realtors" aria-labelledby="realtors-title">
-      <div class="container realtor-grid">
-        <div>
-          <p class="eyebrow eyebrow-light">For Realtors, Landlords &amp; Property Managers</p>
-          <h2 id="realtors-title">Get Properties Listing-Ready &amp; Rent-Ready, Fast</h2>
-          <p>Our owner is a licensed real estate agent, so we know exactly what a property needs before photos, showings or a new tenant. Every day a house sits full of junk is a day it isn't earning. We work on your timeline.</p>
-          <ul class="check-list">
-            <li><strong>Fast turnarounds</strong> for listings, closings and tenant turnovers</li>
-            <li><strong>Estate &amp; foreclosure cleanouts</strong>, handled respectfully and discreetly</li>
-            <li><strong>Lockbox access</strong>, so you don't need to meet us there</li>
-            <li><strong>Photo updates</strong> when the job is done, sent straight to your phone</li>
-            <li><strong>Invoicing</strong> for owners, agents, title companies or management companies</li>
-          </ul>
-          <div class="hero-buttons">
-            <a href="#quote" class="btn btn-primary btn-lg" data-service="Realtor / Property Manager Partnership">Partner With Us</a>
-            <a href="tel:+12815550123" class="btn btn-outline-light btn-lg">Call (281) 555-0123</a> <!-- TODO: phone number -->
-          </div>
-        </div>
+    <!-- ============ REALTORS & PROPERTY MANAGERS ============ -->
+    <section class="section" id="realtors" aria-labelledby="realtors-title">
+      <div class="container">
         <div class="realtor-card">
-          <h3>Who we work with</h3>
-          <ul>
-            <li>Listing agents &amp; brokers</li>
-            <li>Landlords &amp; property managers</li>
-            <li>Investors, flippers &amp; wholesalers</li>
-            <li>Estate executors &amp; families</li>
-            <li>Banks &amp; REO asset managers</li>
-            <li>Apartment communities</li>
-          </ul>
+          <div>
+            <p class="eyebrow">For Realtors, Landlords &amp; Property Managers</p>
+            <h2 id="realtors-title">Listing-Ready &amp; Rent-Ready, Fast</h2>
+            <p>Our owner is a licensed real estate agent, so we know what a property needs before photos, showings or a new tenant. Lockbox access, photo updates when we're done, and invoicing for owners, agents or management companies.</p>
+          </div>
+          <a href="#quote" class="btn btn-dark" data-service="Realtor / Property Manager Partnership">Partner With Us</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ 7. WHAT WE TAKE ============ -->
-    <section class="section" id="what-we-take" aria-labelledby="take-title">
-      <div class="container">
-        <p class="eyebrow">If You Can Point to It, We Can Haul It</p>
-        <h2 id="take-title">What We Take</h2>
-
-        <ul class="take-grid">
-          <li>Furniture &amp; couches</li>
-          <li>Appliances</li>
-          <li>Mattresses &amp; box springs</li>
-          <li>Yard debris &amp; branches</li>
-          <li>Construction debris</li>
-          <li>Hot tubs &amp; spas</li>
-          <li>Electronics &amp; TVs</li>
-          <li>Exercise equipment</li>
-          <li>Carpet &amp; flooring</li>
-          <li>Sheds &amp; playsets</li>
-          <li>Boxes &amp; household clutter</li>
-          <li>Office furniture</li>
-          <li>Pianos</li>
-          <li>Scrap metal</li>
-          <li>Tires</li>
-          <li>Grills &amp; patio furniture</li>
-        </ul>
-
-        <!-- TODO: Adjust this list to match what you can and can't legally take in your area. -->
-        <div class="note-box">
-          <h3>Items we can't take</h3>
-          <p>For safety and legal reasons we can't haul hazardous materials, including <strong>wet paint, chemicals, pesticides, motor oil and fuel, propane tanks, asbestos, and medical waste</strong>. Not sure about something? Just ask. We'll point you to the right drop-off spot.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 8. REVIEWS ============ -->
-    <!--
-      TODO: These are SAMPLE reviews. Replace them with real reviews from your customers
-      (copy them from Google or Facebook with permission), then delete each
-      <span class="sample-tag">Sample review</span> line.
-      Never publish made-up reviews. It's against FTC rules and Google's policies.
-    -->
-    <section class="section section-gray" id="reviews" aria-labelledby="reviews-title">
-      <div class="container">
-        <p class="eyebrow">Happy Customers</p>
-        <h2 id="reviews-title">What Our Neighbors Say</h2>
-
-        <div class="card-grid three">
-          <figure class="card review-card">
-            <span class="sample-tag">Sample review</span>
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"Placeholder review: they showed up the same day I called, cleared out my whole garage in under two hours, and even swept up. Fair price, super friendly crew."</blockquote>
-            <figcaption>Customer Name · Deer Park</figcaption>
-          </figure>
-
-          <figure class="card review-card">
-            <span class="sample-tag">Sample review</span>
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"Placeholder review: I'm a listing agent and needed an estate cleaned out before photos. They had it empty and broom-clean in one day. My go-to now."</blockquote>
-            <figcaption>Customer Name · Realtor, Houston</figcaption>
-          </figure>
-
-          <figure class="card review-card">
-            <span class="sample-tag">Sample review</span>
-            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <blockquote>"Placeholder review: our tenant left a mess. Texted a few photos, got a price in minutes, and the unit was rent-ready that weekend."</blockquote>
-            <figcaption>Customer Name · Property Manager, Pasadena</figcaption>
-          </figure>
-        </div>
-
-        <div class="center-cta">
-          <!-- TODO: Paste your Google Business Profile review link here -->
-          <a href="https://www.google.com/maps" class="btn btn-outline" target="_blank" rel="noopener">Read More Reviews on Google</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 9. SERVICE AREA ============ -->
-    <!-- TODO: Edit this list of cities to match where you actually work (also update "areaServed" in the schema at the top). -->
-    <section class="section" id="service-area" aria-labelledby="area-title">
-      <div class="container">
-        <p class="eyebrow">Proudly Local</p>
-        <h2 id="area-title">Junk Removal Service Area: Deer Park, Houston &amp; Beyond</h2>
-        <p class="section-intro">Based in Deer Park, TX, we serve homes and businesses across east Harris County and the greater Houston area.</p>
-        <ul class="area-list">
-          <li>Deer Park</li>
-          <li>Pasadena</li>
-          <li>La Porte</li>
-          <li>Baytown</li>
-          <li>Houston</li>
-          <li>Seabrook</li>
-          <li>League City</li>
-          <li>Channelview</li>
-          <li>South Houston</li>
-          <li>Friendswood</li>
-          <li>Clear Lake</li>
-          <li>Highlands</li>
-        </ul>
-        <p class="small-note">Don't see your city? <a href="tel:+12815550123">Call us</a>. We probably cover it.</p> <!-- TODO: phone number -->
-      </div>
-    </section>
-
-    <!-- ============ 10. FAQ ============ -->
-    <section class="section section-gray" id="faq" aria-labelledby="faq-title">
+    <!-- ============ FAQ ============ -->
+    <!-- If you change these, also update the FAQPage schema at the top of the file. -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
       <div class="container narrow">
-        <p class="eyebrow">Questions?</p>
-        <h2 id="faq-title">Frequently Asked Questions</h2>
-
+        <h2 id="faq-title" class="center">Frequently Asked Questions</h2>
         <div class="faq">
           <details>
             <summary>How much does junk removal cost?</summary>
-            <p>Pricing is based on how much space your items take up in our truck, plus any heavy or specialty items. The easiest way to get an exact number is to <a href="sms:+12815550123">text us a photo</a>. We'll send back an upfront price. No hidden fees, and you never pay until the job is done.</p> <!-- TODO: phone number; optionally add your starting price -->
+            <p>Pricing is based on how much space your items take up in our truck, plus any heavy or specialty items. Text us a photo and we'll send an upfront price. No hidden fees, and you never pay until the job is done.</p> <!-- TODO: optionally add your starting price -->
           </details>
           <details>
-            <summary>Do you offer same-day service?</summary>
-            <p>Yes! When our schedule allows, we offer same-day and next-day pickups across Deer Park, Pasadena, La Porte, Baytown and Houston. Call or text early in the day for the best chance at a same-day slot.</p>
+            <summary>Do you offer same-day junk removal?</summary>
+            <p>Yes. When our schedule allows, we offer same-day and next-day pickups across Deer Park, Pasadena, La Porte, Baytown and Houston. Call or text early in the day for the best chance at a same-day slot.</p>
           </details>
           <details>
-            <summary>Do you donate or recycle?</summary>
-            <p>Absolutely. Usable furniture, appliances and household goods go to local charities whenever possible, and we recycle metal, cardboard and electronics. The landfill is our last stop, not our first.</p>
+            <summary>Do you donate or recycle items?</summary>
+            <p>Yes. Usable furniture, appliances and household goods go to local charities whenever possible, and we recycle metal, cardboard and electronics. The landfill is our last stop, not our first.</p>
           </details>
           <details>
             <summary>Do I need to be home?</summary>
-            <p>Not necessarily. For curbside, garage or yard pickups, just leave the items out and pay by phone or online. For cleanouts inside a home, we can coordinate access with you, your realtor or your property manager (lockboxes welcome).</p>
-          </details>
-          <details>
-            <summary>What forms of payment do you accept?</summary>
-            <p>We accept cash, all major credit and debit cards, and popular payment apps. Businesses and property managers can be invoiced.</p> <!-- TODO: confirm the payment methods you accept -->
+            <p>No. For curbside, garage or yard pickups, just leave the items out and pay by phone or online. For cleanouts inside a home, we can coordinate access with you, your realtor or your property manager.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ============ 11. QUOTE FORM ============ -->
-    <section class="section section-navy" id="quote" aria-labelledby="quote-title">
-      <div class="container quote-grid">
-        <div class="quote-copy">
-          <p class="eyebrow eyebrow-light">Free, No-Obligation Quote</p>
-          <h2 id="quote-title">Get Your Free Junk Removal Quote</h2>
-          <p>Tell us what needs to go and we'll get back to you fast with an upfront price. Want an answer even faster?</p>
-          <div class="quote-contact">
-            <!-- TODO: phone number (3 spots below) -->
-            <a href="tel:+12815550123" class="btn btn-primary btn-lg btn-block">Call (281) 555-0123</a>
-            <a href="sms:+12815550123" class="btn btn-outline-light btn-lg btn-block">Text Us a Photo</a>
+    <!-- ============ QUOTE: short 3-step form ============ -->
+    <!--
+      ======================================================================
+      TODO: FORMSPREE SETUP (this is what emails the form to you)
+      1. Make a free account at https://formspree.io
+      2. Click "New Form", name it "Quote Requests", and copy the form ID.
+         It looks like:  https://formspree.io/f/abcdwxyz  (the ID is "abcdwxyz")
+      3. Replace YOUR_FORM_ID below with your ID. Example:
+         action="https://formspree.io/f/abcdwxyz"
+      NOTE: Formspree's FREE plan does not accept file uploads. If you stay on the
+      free plan, the form still works but photos won't attach. Customers can
+      text photos instead. To accept photos in the form, upgrade your Formspree plan.
+      ======================================================================
+    -->
+    <section class="section" id="quote" aria-labelledby="quote-title">
+      <div class="container">
+        <div class="quote-card">
+          <div class="quote-copy">
+            <h2 id="quote-title">Junk Removal Has Never Been Easier</h2>
+            <p>Three quick steps and we'll text or call you back with an upfront price.</p>
+            <!-- TODO: phone number -->
+            <p class="quote-call">Rather talk? <a href="tel:+12815550123">(281) 555-0123</a></p>
           </div>
-        </div>
 
-        <!--
-          ======================================================================
-          TODO: FORMSPREE SETUP (this is what emails the form to you)
-          1. Make a free account at https://formspree.io
-          2. Click "New Form", name it "Quote Requests", and copy the form ID.
-             It looks like:  https://formspree.io/f/abcdwxyz  (the ID is "abcdwxyz")
-          3. Replace YOUR_FORM_ID below with your ID. Example:
-             action="https://formspree.io/f/abcdwxyz"
-          NOTE: Formspree's FREE plan does not accept file uploads. If you stay on the
-          free plan, the form still works but photos won't attach. Customers can
-          text photos instead. To accept photos in the form, upgrade your Formspree plan.
-          ======================================================================
-        -->
-        <form class="quote-form" id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="New quote request from website">
-          <!-- Spam trap: real people never see or fill this in -->
-          <div class="visually-hidden" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <form class="quote-form" id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data" novalidate>
+            <input type="hidden" name="_subject" value="New quote request from website">
+            <div class="visually-hidden" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
 
-          <div class="form-row">
-            <label for="f-name">Your name <span aria-hidden="true">*</span></label>
-            <input id="f-name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="form-row two">
-            <div>
-              <label for="f-phone">Phone <span aria-hidden="true">*</span></label>
+            <p class="progress" aria-live="polite"><span data-step-label>Step 1 of 3</span></p>
+
+            <!-- Step 1: ZIP -->
+            <fieldset class="step-panel" data-step="1">
+              <legend>Where's the junk?</legend>
+              <div class="zip-form">
+                <label for="f-zip" class="visually-hidden">ZIP code</label>
+                <input id="f-zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" maxlength="5" pattern="[0-9]{5}" placeholder="ZIP code" required>
+                <button type="button" class="btn btn-dark" data-next>Next</button>
+              </div>
+              <p class="zip-msg" role="status" aria-live="polite"></p>
+            </fieldset>
+
+            <!-- Step 2: what needs to go -->
+            <fieldset class="step-panel" data-step="2">
+              <legend>What needs to go?</legend>
+              <label for="f-service">Type of job</label>
+              <select id="f-service" name="service">
+                <option>Residential junk removal</option>
+                <option>Commercial junk removal</option>
+                <option>Property cleanout</option>
+                <option>Garage / shed cleanout</option>
+                <option>Realtor / Property Manager Partnership</option>
+                <option>Something else</option>
+              </select>
+              <label for="f-items">Describe the items</label>
+              <textarea id="f-items" name="items" rows="3" placeholder="Example: old couch, washer & dryer, about 10 boxes" required></textarea>
+              <label for="f-when">When do you need it gone?</label>
+              <select id="f-when" name="when">
+                <option>As soon as possible</option>
+                <option>This week</option>
+                <option>Next week or later</option>
+                <option>I'm flexible</option>
+              </select>
+              <label for="f-photos">Photos <span class="optional">(optional, helps us quote faster)</span></label>
+              <input id="f-photos" name="photos" type="file" accept="image/*" multiple>
+              <div class="btn-row">
+                <button type="button" class="btn btn-ghost" data-back>Back</button>
+                <button type="button" class="btn btn-dark" data-next>Next</button>
+              </div>
+            </fieldset>
+
+            <!-- Step 3: contact -->
+            <fieldset class="step-panel" data-step="3">
+              <legend>Where should we send your quote?</legend>
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+              <label for="f-phone">Phone</label>
               <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
-            </div>
-            <div>
+              <label for="f-address">Pickup address</label>
+              <input id="f-address" name="address" type="text" autocomplete="street-address" placeholder="Street and city" required>
               <label for="f-email">Email <span class="optional">(optional)</span></label>
               <input id="f-email" name="email" type="email" autocomplete="email">
-            </div>
-          </div>
-          <div class="form-row">
-            <label for="f-address">Pickup address <span aria-hidden="true">*</span></label>
-            <input id="f-address" name="address" type="text" autocomplete="street-address" placeholder="Street, city, ZIP" required>
-          </div>
-          <div class="form-row">
-            <label for="f-service">Type of job</label>
-            <select id="f-service" name="service">
-              <option>Residential junk removal</option>
-              <option>Commercial junk removal</option>
-              <option>Property cleanout (estate, rental, foreclosure, move-out)</option>
-              <option>Garage / shed cleanout</option>
-              <option>Realtor / Property Manager Partnership</option>
-              <option>Something else</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label for="f-items">What needs to go? <span aria-hidden="true">*</span></label>
-            <textarea id="f-items" name="items" rows="4" placeholder="Example: old couch, washer & dryer, about 10 boxes in the garage" required></textarea>
-          </div>
-          <div class="form-row">
-            <label for="f-photos">Photos <span class="optional">(optional, but helps us quote faster)</span></label>
-            <input id="f-photos" name="photos" type="file" accept="image/*" multiple>
-          </div>
+              <div class="btn-row">
+                <button type="button" class="btn btn-ghost" data-back>Back</button>
+                <button type="submit" class="btn btn-orange">Get My Free Quote</button>
+              </div>
+            </fieldset>
 
-          <button type="submit" class="btn btn-primary btn-lg btn-block">Send My Free Quote Request</button>
-          <p class="form-status" role="status" aria-live="polite"></p>
-          <p class="form-fine">We'll only use your info to reply to your request. No spam, ever.</p>
-        </form>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ 12. FOOTER ============ -->
+  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer-grid">
       <div>
         <img src="images/logo.svg" alt="One Stop Property Solutions logo" width="500" height="120" loading="lazy" class="footer-logo">
-        <p>Junk removal and property cleanouts in Deer Park, TX and the greater Houston area. Locally owned and operated.</p>
         <!-- TODO: Replace the placeholder social media links with your real pages -->
         <ul class="social">
           <li><a href="https://www.facebook.com/YOUR-PAGE" target="_blank" rel="noopener" aria-label="One Stop Property Solutions on Facebook">
@@ -568,44 +477,28 @@
           </a></li>
         </ul>
       </div>
-
       <div>
         <h3>Contact</h3>
-        <ul class="footer-list">
-          <!-- TODO: phone number and email -->
-          <li><a href="tel:+12815550123">(281) 555-0123</a></li>
-          <li><a href="sms:+12815550123">Text us a photo</a></li>
-          <li><a href="mailto:info@example.com">info@example.com</a></li>
-          <li>Deer Park, TX 77536</li>
-        </ul>
+        <!-- TODO: phone number and email -->
+        <p><a href="tel:+12815550123">(281) 555-0123</a><br><a href="mailto:info@example.com">info@example.com</a><br>Deer Park, TX 77536</p>
       </div>
-
       <div>
         <h3>Hours</h3>
         <!-- TODO: Your real business hours (also update openingHoursSpecification in the schema at the top) -->
-        <ul class="footer-list">
-          <li>Mon – Sat: 7:00 am – 7:00 pm</li>
-          <li>Sunday: By appointment</li>
-        </ul>
+        <p>Mon – Sat: 7:00 am – 7:00 pm<br>Sunday: By appointment</p>
       </div>
-
       <div>
+        <!-- SERVICE AREA. TODO: Edit to match where you actually work (also update "areaServed" in the schema at the top). -->
         <h3>Service Area</h3>
-        <ul class="footer-list">
-          <li>Deer Park · Pasadena · La Porte</li>
-          <li>Baytown · Houston · Seabrook</li>
-          <li>League City · Channelview</li>
-          <li>&amp; surrounding areas</li>
-        </ul>
+        <p>Deer Park, Pasadena, La Porte, Baytown, Houston, Seabrook, League City, Channelview &amp; surrounding areas</p>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© <span id="year">2026</span> One Stop Property Solutions · Deer Park, TX · Junk Removal &amp; Property Cleanouts</p>
-      <a href="#top">Back to top ↑</a>
+      <p>© <span id="year">2026</span> One Stop Property Solutions · Junk Removal &amp; Property Cleanouts · Deer Park, TX</p>
     </div>
   </footer>
 
-  <!-- Floating call button (shows on phones only). TODO: phone number -->
+  <!-- Floating call button (phones only). TODO: phone number -->
   <a href="tel:+12815550123" class="floating-call" aria-label="Call One Stop Property Solutions">
     <svg aria-hidden="true" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
     <span>Call</span>

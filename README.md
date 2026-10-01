@@ -10,7 +10,7 @@ It's one simple web page. There's nothing to install and no server to run. GitHu
 |---|---|
 | `index.html` | The whole homepage. Most of your edits happen here. |
 | `css/style.css` | Colors, fonts and layout. You usually won't need to touch this. |
-| `js/main.js` | Small scripts for the mobile menu, before/after sliders and quote form. You won't need to touch this. |
+| `js/main.js` | Small scripts for the ZIP box, the 3-step quote form and the before/after sliders. You won't need to touch this. |
 | `images/` | Logos, photos and icons. |
 
 ---
@@ -47,7 +47,9 @@ Click **Replace All** for each one. Then commit the change (the source control i
 
 **Hours:** search for `Mon – Sat` in `index.html` to change the hours in the footer. Also search for `openingHoursSpecification` near the top and change the days, `"opens"` and `"closes"` times (24-hour time, so 7pm = `19:00`). That's what Google reads.
 
-**Cities:** search for `SERVICE AREA` to edit the city list. Also update `areaServed` near the top of the file and the "Service Area" list in the footer.
+**Cities:** search for `SERVICE AREA` to edit the city list in the footer. Also update `areaServed` near the top of the file. That's what Google reads.
+
+**ZIP codes:** when someone types a ZIP, the site says "Great news, we serve your area!" for any ZIP starting with `77` (the Houston area). Everyone can still send a request either way. To list only your exact ZIPs, open `js/main.js`, find `SERVICE_ZIPS = null` and change it to a list like `SERVICE_ZIPS = ['77536', '77502', '77571']`.
 
 ---
 
@@ -57,9 +59,10 @@ All photos are in the `images` folder. The easiest way to swap a photo is to **u
 
 | File name | What it should be | Best size |
 |---|---|---|
-| `before-1.jpg`, `after-1.jpg` | Job #1 before & after | Landscape (wide), about 1200 × 900 |
-| `before-2.jpg`, `after-2.jpg` | Job #2 before & after | Same |
-| `before-3.jpg`, `after-3.jpg` | Job #3 before & after | Same |
+| `hero.jpg` | The big photo at the top, next to the ZIP box. Use your truck or crew on a job. | Landscape (wide), about 1200 × 900 |
+| `before-1.jpg`, `after-1.jpg` | Job #1 before & after (shown next to your services) | Same |
+| `before-2.jpg`, `after-2.jpg` | Job #2 before & after (Before & After section) | Same |
+| `before-3.jpg`, `after-3.jpg` | Job #3 before & after (Before & After section) | Same |
 | `og-image.jpg` | The preview picture when someone shares your link on Facebook or by text | Exactly 1200 × 630 |
 
 **How to upload:**
@@ -102,7 +105,7 @@ GitHub Pages can't send emails by itself, so the quote form uses a free service 
 
 **About photo uploads:** Formspree's **free plan doesn't accept file uploads**. On the free plan the form still sends everything else, but photos won't come through. You have two options:
 - Upgrade to a paid Formspree plan, which supports file uploads, **or**
-- Remove the photo field. In `index.html`, search for `f-photos` and delete that whole `<div class="form-row">…</div>` block. Customers can still use the "Text Us a Photo" buttons.
+- Remove the photo field. In `index.html`, search for `f-photos` and delete those two lines: the `<label for="f-photos">` line and the `<input id="f-photos">` line under it. Customers can still use the "text us a photo" link.
 
 Until you add your Formspree ID, the form shows visitors a message asking them to call or text instead, so nobody gets stuck.
 
