@@ -59,11 +59,14 @@ All photos are in the `images` folder. The easiest way to swap a photo is to **u
 
 | File name | What it should be | Best size |
 |---|---|---|
-| `hero.jpg` | The big photo at the top, next to the ZIP box. Use your truck or crew on a job. | Landscape (wide), about 1200 × 900 |
 | `before-1.jpg`, `after-1.jpg` | Job #1 before & after (shown next to your services) | Same |
 | `before-2.jpg`, `after-2.jpg` | Job #2 before & after (Before & After section) | Same |
 | `before-3.jpg`, `after-3.jpg` | Job #3 before & after (Before & After section) | Same |
 | `og-image.jpg` | The preview picture when someone shares your link on Facebook or by text | Exactly 1200 × 630 |
+
+**The picture at the top of the page** is a drawing of a truck (`images/hero-illustration.svg`), so the site looks finished before you have photos. When you have a good photo of your truck or crew on a job:
+1. Name it `hero.jpg` and upload it to the `images` folder (landscape, about 1200 × 900).
+2. In `index.html`, search for `hero-illustration`. Right above it is a note with the exact line to paste in its place.
 
 **How to upload:**
 1. Open the `images` folder on GitHub.
