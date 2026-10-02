@@ -147,7 +147,7 @@ If you buy a domain like `onestoppropertysolutions.com`:
 
 | File | Use it for |
 |---|---|
-| `images/logo.svg` | Main logo (navy + green on white). Website header, flyers, business cards, truck doors. |
+| `images/logo.svg` | Main logo (navy + orange on white). Website header, flyers, business cards, truck doors. |
 | `images/logo-white.svg` | White version for dark backgrounds, like the website footer or a dark-colored truck. |
 | `images/logo-square.svg` / `logo-square.png` | Square logo for your Facebook, Instagram, TikTok and Google profile pictures. Upload the **.png** to social sites. |
 | `images/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | The little icon in the browser tab and on phone home screens. |
@@ -156,7 +156,7 @@ If you buy a domain like `onestoppropertysolutions.com`:
 
 **Brand colors** (to give your printer, sign shop or designer):
 - Navy: `#0B2545`
-- Green: `#2BB673`
+- Orange: `#F7801F`
 
 ---
 

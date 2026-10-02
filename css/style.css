@@ -9,9 +9,9 @@
   --soft: #F4F2EF;          /* soft gray card / section background */
   --white: #FFFFFF;
   /* Brand accent color (phone buttons, stars, icons). Change these 3 lines to recolor the site. */
-  --accent: #2BB673;
-  --accent-hover: #3DCB86;
-  --accent-text: #1C7A4D;   /* darker shade for small text on white */
+  --accent: #F7801F;
+  --accent-hover: #FF9133;
+  --accent-text: #B85200;   /* darker shade for small text on white */
   --radius: 18px;
   --header-h: 72px;
   --font-head: "Source Serif 4", Georgia, "Times New Roman", serif;
