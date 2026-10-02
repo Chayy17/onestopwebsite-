@@ -68,6 +68,8 @@ All photos are in the `images` folder. The easiest way to swap a photo is to **u
 1. Name it `hero.jpg` and upload it to the `images` folder (landscape, about 1200 × 900).
 2. In `index.html`, search for `hero-illustration`. Right above it is a note with the exact line to paste in its place.
 
+**On phones,** the truck drawing and the before & after photos are hidden to keep the page short. They only show on computers and tablets. To show something on phones again, search `index.html` for `hide-on-phone` and delete that word from the element.
+
 **How to upload:**
 1. Open the `images` folder on GitHub.
 2. Click **Add file → Upload files**.

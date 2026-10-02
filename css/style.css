@@ -320,6 +320,12 @@ p { margin: 0 0 1em; }
   .footer-bottom { padding-bottom: 96px; } /* room for the floating call button */
 }
 
+/* ---------- Phone-only simplifications ----------
+   Anything with class="hide-on-phone" in index.html (the truck drawing and the
+   before/after photos) is hidden on phones to keep the page short and fast.
+   Remove the class from an element to show it on phones again. */
+@media (max-width: 768px) { .hide-on-phone { display: none !important; } }
+
 /* ---------- Floating call button (phones only) ---------- */
 .floating-call {
   position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 150;
