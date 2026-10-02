@@ -148,11 +148,11 @@ If you buy a domain like `onestoppropertysolutions.com`:
 | File | Use it for |
 |---|---|
 | `images/logo.svg` | Main logo (black + orange on white). Website header, flyers, business cards, truck doors. |
-| `images/logo-white.svg` | White version for dark backgrounds, like the website footer or a dark-colored truck. |
+| `images/logo-white.svg` | White version for dark backgrounds, like a dark-colored truck, shirts or photos. |
 | `images/logo-square.svg` / `logo-square.png` | Square logo for your Facebook, Instagram, TikTok and Google profile pictures. Upload the **.png** to social sites. |
 | `images/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` | The little icon in the browser tab and on phone home screens. |
 
-**For truck wraps, signs or printing:** send the printer `logo.svg`. SVG files can be enlarged to any size without getting blurry. Ask the printer to **"convert the text to outlines"** so the lettering prints exactly as designed.
+**For truck wraps, signs or printing:** send the printer `logo.svg`. SVG files can be enlarged to any size without getting blurry. The lettering is already built into the logo as shapes, so it prints exactly as designed on any printer.
 
 **Brand colors** (to give your printer, sign shop or designer):
 - Black: `#111111`

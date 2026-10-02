@@ -49,8 +49,6 @@
     <rect x="449.5" y="300" width="109" height="14" fill="#F7801F" stroke="none"/>
     <rect x="550" y="314" width="16" height="10" rx="2" fill="#FDE3CC"/>
 
-    <!-- Logo on the truck (house + roof from the brand mark) -->
-    <path d="M482 292 v-12 l10 -8 l10 8 v12" fill="none" stroke="#F7801F" stroke-width="3"/>
 
     <!-- Chassis and wheels -->
     <path d="M196 336 H560" fill="none"/>

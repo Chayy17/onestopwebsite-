@@ -89,7 +89,7 @@ p { margin: 0 0 1em; }
 }
 .header-inner { display: flex; align-items: center; gap: 20px; height: var(--header-h); }
 .brand { flex: none; }
-.brand img { height: 44px; width: auto; }
+.brand img { height: 50px; width: auto; }
 .main-nav { display: flex; gap: 4px; margin-left: auto; }
 .main-nav a {
   padding: 8px 12px; border-radius: 8px; text-decoration: none;
