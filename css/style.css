@@ -8,9 +8,10 @@
   --line: #E4E1DD;          /* thin divider lines */
   --soft: #F4F2EF;          /* soft gray card / section background */
   --white: #FFFFFF;
-  --orange: #F7801F;        /* brand orange: phone buttons */
-  --orange-hover: #FF9133;
-  --orange-text: #B85200;   /* darker orange for small text on white */
+  /* Brand accent color (phone buttons, stars, icons). Change these 3 lines to recolor the site. */
+  --accent: #2BB673;
+  --accent-hover: #3DCB86;
+  --accent-text: #1C7A4D;   /* darker shade for small text on white */
   --radius: 18px;
   --header-h: 72px;
   --font-head: "Source Serif 4", Georgia, "Times New Roman", serif;
@@ -59,7 +60,7 @@ p { margin: 0 0 1em; }
   position: absolute !important; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap; border: 0; padding: 0; margin: -1px;
 }
-:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 .icon-sm { width: 1.1em; height: 1.1em; flex: none; }
 
 /* ---------- Buttons (rounded pills) ---------- */
@@ -75,8 +76,8 @@ p { margin: 0 0 1em; }
 .btn-sm { min-height: 44px; padding: 9px 20px; font-size: .95rem; }
 .btn-dark { background: var(--ink); color: var(--white); }
 .btn-dark:hover { background: #333; }
-.btn-orange { background: var(--orange); color: var(--ink); }
-.btn-orange:hover { background: var(--orange-hover); }
+.btn-accent { background: var(--accent); color: var(--ink); }
+.btn-accent:hover { background: var(--accent-hover); }
 .btn-ghost { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn-ghost:hover { border-color: var(--ink); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
@@ -150,13 +151,13 @@ p { margin: 0 0 1em; }
 .zip-msg:empty { display: none; }
 .zip-msg { margin: 8px 0 0 6px; font-size: .95rem; font-weight: 500; }
 .zip-msg.ok { color: #11743B; }
-.zip-msg.warn { color: var(--orange-text); }
+.zip-msg.warn { color: #9A5B00; }
 
 /* ---------- Sections ---------- */
 .section { padding: clamp(56px, 8vw, 96px) 0; }
 .section-soft { background: var(--soft); }
 .section-intro { color: var(--muted); font-size: 1.1rem; max-width: 36em; }
-.eyebrow { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--orange-text); margin-bottom: .6em; }
+.eyebrow { font-size: .82rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--accent-text); margin-bottom: .6em; }
 
 /* ---------- How it works ---------- */
 .steps {
@@ -164,7 +165,7 @@ p { margin: 0 0 1em; }
   display: grid; gap: 36px; grid-template-columns: repeat(3, 1fr);
 }
 .steps li { border-top: 0; }
-.step-icon { width: 36px; height: 36px; color: var(--orange); margin-bottom: 14px; }
+.step-icon { width: 36px; height: 36px; color: var(--accent); margin-bottom: 14px; }
 .steps h3 { padding-bottom: 14px; border-bottom: 1px solid var(--line); margin-bottom: 14px; }
 .steps p { color: var(--muted); font-size: .98rem; margin: 0; }
 @media (max-width: 760px) { .steps { grid-template-columns: 1fr; gap: 28px; } }
@@ -177,7 +178,7 @@ p { margin: 0 0 1em; }
 }
 .review blockquote { margin: 0 0 16px; color: #333; flex: 1; }
 .review figcaption { color: var(--muted); }
-.stars { color: var(--orange); letter-spacing: 2px; font-size: 1.15rem; margin-bottom: 10px; }
+.stars { color: var(--accent); letter-spacing: 2px; font-size: 1.15rem; margin-bottom: 10px; }
 /* Visible label on the sample reviews. Delete the tag in index.html once you add real reviews. */
 .sample-tag {
   align-self: flex-start; margin-bottom: 10px; padding: 2px 10px; border-radius: 999px;
@@ -228,7 +229,7 @@ p { margin: 0 0 1em; }
 }
 .ba-range::-webkit-slider-thumb { -webkit-appearance: none; width: 48px; height: 100%; }
 .ba-range::-moz-range-thumb { width: 48px; height: 100%; border: 0; }
-.ba-slider:has(.ba-range:focus-visible) { outline: 3px solid var(--orange); outline-offset: 3px; }
+.ba-slider:has(.ba-range:focus-visible) { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 /* ---------- Partners (investors, contractors, landlords) ---------- */
 .partner-card {
@@ -331,7 +332,7 @@ p { margin: 0 0 1em; }
   position: fixed; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom)); z-index: 150;
   display: none; align-items: center; gap: 8px;
   padding: 0 22px; height: 56px; border-radius: 999px;
-  background: var(--orange); color: var(--ink); text-decoration: none;
+  background: var(--accent); color: var(--ink); text-decoration: none;
   font-weight: 700; font-size: 1.05rem;
   box-shadow: 0 8px 22px rgba(0, 0, 0, .25);
 }

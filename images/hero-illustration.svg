@@ -2,16 +2,16 @@
   <title id="t">Illustration of a One Stop Property Solutions truck loaded with old furniture and junk outside a house</title>
   <g stroke="#111111" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
     <!-- Sun and clouds -->
-    <circle cx="500" cy="80" r="34" fill="#FDE3CC" stroke="none"/>
+    <circle cx="500" cy="80" r="34" fill="#FFF0B8" stroke="none"/>
     <path d="M90 92 h70 a16 16 0 0 0 -14 -24 a22 22 0 0 0 -40 -4 a15 15 0 0 0 -16 28 z" fill="#FFFFFF"/>
     <path d="M330 62 h56 a13 13 0 0 0 -11 -19 a18 18 0 0 0 -33 -3 a12 12 0 0 0 -12 22 z" fill="#FFFFFF"/>
 
     <!-- House -->
     <rect x="38" y="190" width="130" height="152" fill="#FFFFFF"/>
-    <path d="M24 196 L103 128 L182 196" fill="none" stroke="#F7801F" stroke-width="12"/>
+    <path d="M24 196 L103 128 L182 196" fill="none" stroke="#2BB673" stroke-width="12"/>
     <rect x="58" y="214" width="34" height="34" fill="#E8EEF5"/>
     <path d="M75 214 v34 M58 231 h34" fill="none" stroke-width="2.5"/>
-    <rect x="112" y="268" width="36" height="74" fill="#F7801F"/>
+    <rect x="112" y="268" width="36" height="74" fill="#2BB673"/>
     <circle cx="140" cy="306" r="2.5" fill="#111111" stroke="none"/>
 
     <!-- Bush -->
@@ -22,17 +22,17 @@
 
     <!-- Truck cargo box (cut away to show the load) -->
     <rect x="196" y="164" width="252" height="172" rx="6" fill="#FFFFFF"/>
-    <rect x="196" y="300" width="252" height="14" fill="#F7801F" stroke="none"/>
+    <rect x="196" y="300" width="252" height="14" fill="#2BB673" stroke="none"/>
 
     <!-- Load: tire -->
     <circle cx="232" cy="200" r="20" fill="#111111"/>
     <circle cx="232" cy="200" r="8" fill="#FFFFFF"/>
     <!-- Load: lamp -->
     <path d="M296 222 V186" fill="none"/>
-    <path d="M280 186 H312 L304 168 H288 Z" fill="#FDE3CC"/>
+    <path d="M280 186 H312 L304 168 H288 Z" fill="#FFF0B8"/>
     <!-- Load: couch -->
-    <rect x="216" y="226" width="104" height="30" rx="8" fill="#F7801F"/>
-    <rect x="210" y="252" width="116" height="40" rx="8" fill="#F7801F"/>
+    <rect x="216" y="226" width="104" height="30" rx="8" fill="#2BB673"/>
+    <rect x="210" y="252" width="116" height="40" rx="8" fill="#2BB673"/>
     <path d="M232 252 v40 M304 252 v40" fill="none" stroke-width="2.5"/>
     <!-- Load: boxes -->
     <rect x="334" y="244" width="54" height="48" fill="#E9D3B5"/>
@@ -46,11 +46,11 @@
     <!-- Cab -->
     <path d="M448 214 H514 L560 266 V336 H448 Z" fill="#FFFFFF"/>
     <path d="M462 228 H508 L540 264 H462 Z" fill="#E8EEF5"/>
-    <rect x="449.5" y="300" width="109" height="14" fill="#F7801F" stroke="none"/>
-    <rect x="550" y="314" width="16" height="10" rx="2" fill="#FDE3CC"/>
+    <rect x="449.5" y="300" width="109" height="14" fill="#2BB673" stroke="none"/>
+    <rect x="550" y="314" width="16" height="10" rx="2" fill="#FFF0B8"/>
 
     <!-- Logo on the truck (house + roof from the brand mark) -->
-    <path d="M482 292 v-12 l10 -8 l10 8 v12" fill="none" stroke="#F7801F" stroke-width="3"/>
+    <path d="M482 292 v-12 l10 -8 l10 8 v12" fill="none" stroke="#2BB673" stroke-width="3"/>
 
     <!-- Chassis and wheels -->
     <path d="M196 336 H560" fill="none"/>
