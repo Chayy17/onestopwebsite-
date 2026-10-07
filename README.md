@@ -135,11 +135,20 @@ If you don't use one of these platforms, delete that whole `<li>…</li>` line i
 
 > Make sure all these files are on the **main** branch. If they're on a different branch, merge them into main first (or pick that branch in step 4).
 
-### Using your own domain (optional)
-If you buy a domain like `onestoppropertysolutions.com`:
-1. In **Settings → Pages → Custom domain**, type your domain and click **Save**. Follow GitHub's instructions to set up the DNS records at the company where you bought the domain.
-2. Check **Enforce HTTPS** once it's available.
-3. In `index.html`, find and replace `https://chayy17.github.io/onestopwebsite-/` with your new address (for example `https://onestoppropertysolutions.com/`). This keeps your Google listing and Facebook share previews pointed at the right place.
+### Your domain: onestopproperty.solutions
+The site uses the custom domain **https://onestopproperty.solutions/**. The `CNAME` file in this folder tells GitHub Pages which domain to use. Don't delete it.
+
+**DNS records** (set at the company where you bought the domain):
+
+| Type | Name / Host | Value |
+|---|---|---|
+| A | `@` | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `chayy17.github.io` |
+
+Then in **Settings → Pages**, make sure **Custom domain** says `onestopproperty.solutions`, and check **Enforce HTTPS** once it's available.
 
 ---
 
