@@ -108,9 +108,7 @@ GitHub Pages can't send emails by itself, so the quote form uses a free service 
    `action="https://formspree.io/f/abcdwxyz"`
 5. Commit the change, wait a minute, and send yourself a test request from the live site. Formspree may ask you to confirm the first one by email.
 
-**About photo uploads:** Formspree's **free plan doesn't accept file uploads**. On the free plan the form still sends everything else, but photos won't come through. You have two options:
-- Upgrade to a paid Formspree plan, which supports file uploads, **or**
-- Remove the photo field. In `index.html`, search for `f-photos` and delete those two lines: the `<label for="f-photos">` line and the `<input id="f-photos">` line under it. Customers can still use the "text us a photo" link.
+**About photos:** Formspree's **free plan doesn't accept file uploads**, so the form has no photo field. Instead, step 2 of the form has a "Text them to (832) 444-7217" link so customers can text photos.
 
 Until you add your Formspree ID, the form shows visitors a message asking them to call or text instead, so nobody gets stuck.
 

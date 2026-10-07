@@ -282,9 +282,8 @@ p { margin: 0 0 1em; }
 }
 .step-panel > textarea { resize: vertical; min-height: 96px; }
 .step-panel > input:focus, .step-panel > select:focus, .step-panel > textarea:focus { outline: none; border-color: var(--ink); }
-.step-panel > input[type="file"] {
-  width: 100%; padding: 12px; border: 1px dashed #C9C4BE; border-radius: 12px; background: var(--white); font: inherit; font-size: .92rem;
-}
+.step-panel > .form-note { margin: 16px 0 0; font-size: .92rem; color: var(--muted); }
+.step-panel > .form-note a { color: var(--ink); font-weight: 500; white-space: nowrap; }
 .step-panel .btn-row { margin-top: 20px; }
 .step-panel .btn-row .btn { flex: 1; }
 .step-panel [aria-invalid="true"] { border-color: #B3261E !important; }
