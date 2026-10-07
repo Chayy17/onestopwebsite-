@@ -82,7 +82,7 @@ All photos are in the `images` folder. The easiest way to swap a photo is to **u
 
 ## Step 4: Add your real reviews
 
-The 3 reviews on the site are **samples**. Each one has a yellow "SAMPLE REVIEW" label so you won't forget to replace it.
+The reviews section is **hidden** for now because it only has sample reviews. When you have real ones, follow these steps, then show the section by searching `index.html` for `id="reviews"` and deleting the word `hidden` at the end of that line.
 
 1. In `index.html`, search for `REVIEWS`.
 2. For each review card, replace the text between the `"quotes"` with a real customer review, and replace `Customer Name · Deer Park` with their first name (or first name + last initial) and city.
