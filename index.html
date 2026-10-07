@@ -377,12 +377,10 @@
     <!-- ============ QUOTE: short 3-step form ============ -->
     <!--
       ======================================================================
-      TODO: FORMSPREE SETUP (this is what emails the form to you)
-      1. Make a free account at https://formspree.io
-      2. Click "New Form", name it "Quote Requests", and copy the form ID.
-         It looks like:  https://formspree.io/f/abcdwxyz  (the ID is "abcdwxyz")
-      3. Replace YOUR_FORM_ID below with your ID. Example:
-         action="https://formspree.io/f/abcdwxyz"
+      FORMSPREE (this is what emails the form to you)
+      The form sends to Formspree form "mqpepbpo" (see action= below).
+      To change which inbox gets quote requests, change it in your
+      Formspree account at https://formspree.io. No website edit needed.
       NOTE: Formspree's FREE plan does not accept file uploads, so the form has no
       photo field. Step 2 points customers to "text us a photo" instead.
       ======================================================================
@@ -396,7 +394,7 @@
             <p class="quote-call">Rather talk? <a href="tel:+18324447217">(832) 444-7217</a></p>
           </div>
 
-          <form class="quote-form" id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+          <form class="quote-form" id="quote-form" action="https://formspree.io/f/mqpepbpo" method="POST" novalidate>
             <input type="hidden" name="_subject" value="New quote request from website">
             <div class="visually-hidden" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
 
