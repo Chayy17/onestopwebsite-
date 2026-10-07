@@ -10,7 +10,7 @@ It's one simple web page. There's nothing to install and no server to run. GitHu
 |---|---|
 | `index.html` | The whole homepage. Most of your edits happen here. |
 | `css/style.css` | Colors, fonts and layout. You usually won't need to touch this. |
-| `js/main.js` | Small scripts for the ZIP box, the 3-step quote form and the before/after sliders. You won't need to touch this. |
+| `js/main.js` | Small scripts for the ZIP box and the 4-step estimate booking form. You won't need to touch this. |
 | `images/` | Logos, photos and icons. |
 
 ---

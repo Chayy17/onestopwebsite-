@@ -225,7 +225,7 @@ p { margin: 0 0 1em; }
   background: var(--soft); border-radius: var(--radius); padding: clamp(28px, 5vw, 56px);
 }
 .quote-copy p { color: var(--muted); }
-.quote-call a { color: var(--ink); font-weight: 700; }
+.quote-copy a { color: var(--ink); font-weight: 700; }
 @media (max-width: 820px) { .quote-card { grid-template-columns: minmax(0, 1fr); gap: 20px; } }
 
 .quote-form { min-width: 0; }

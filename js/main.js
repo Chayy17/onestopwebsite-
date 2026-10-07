@@ -20,7 +20,7 @@
       'Please enter a 5-digit ZIP code.';
   }
 
-  // ----- Multi-step quote form -----
+  // ----- Multi-step estimate booking form -----
   var form = document.getElementById('quote-form');
   if (!form) return;
   var panels = form.querySelectorAll('.step-panel');
@@ -44,7 +44,10 @@
     var panel = form.querySelector('[data-step="' + n + '"]');
     var ok = true;
     panel.querySelectorAll('[required]').forEach(function (field) {
-      var valid = field === formZip ? zipStatus(field.value.trim()) !== 'invalid' : field.value.trim() !== '';
+      var value = field.value.trim();
+      var valid = field === formZip ? zipStatus(value) !== 'invalid'
+        : field.type === 'date' ? value !== '' && (!field.min || value >= field.min)
+        : value !== '';
       field.setAttribute('aria-invalid', String(!valid));
       if (!valid && ok) { field.focus(); ok = false; }
     });
@@ -67,6 +70,13 @@
 
   showStep(1, false);
 
+  // Don't allow picking a day in the past
+  var dateInput = document.getElementById('f-date');
+  if (dateInput) {
+    var now = new Date();
+    dateInput.min = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+  }
+
   // Hero ZIP box: check the ZIP, carry it into the form, and jump to step 2
   document.querySelectorAll('[data-zip-form]').forEach(function (zipForm) {
     var input = zipForm.querySelector('input');
@@ -85,7 +95,7 @@
     });
   });
 
-  // "Get a Quote" buttons next to a service pre-select that job type
+  // "Free Estimate" buttons next to a service pre-select that job type
   var serviceSelect = document.getElementById('f-service');
   document.querySelectorAll('[data-service]').forEach(function (link) {
     link.addEventListener('click', function () {
@@ -96,7 +106,7 @@
   // Send to Formspree without leaving the page
   form.addEventListener('submit', function (e) {
     e.preventDefault();
-    if (!stepIsValid(3)) return;
+    if (!stepIsValid(panels.length)) return;
 
     if (form.action.indexOf('YOUR_FORM_ID') !== -1) {
       status.className = 'form-status error';
@@ -120,13 +130,13 @@
       panels.forEach(function (p) { p.classList.remove('active'); });
       if (stepLabel) stepLabel.textContent = 'Done';
       status.className = 'form-status success';
-      status.textContent = 'Thanks! Your request was sent. We\'ll reach out shortly with your upfront price.';
+      status.textContent = 'Thanks! We got your request. We\'ll text or call shortly to confirm your estimate time.';
     }).catch(function () {
       status.className = 'form-status error';
       status.textContent = 'Sorry, something went wrong. Please call or text us instead.';
     }).finally(function () {
       button.disabled = false;
-      button.textContent = 'Get My Free Quote';
+      button.textContent = 'Book My Free Estimate';
     });
   });
 
