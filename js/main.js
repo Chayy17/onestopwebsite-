@@ -2,15 +2,6 @@
 (function () {
   'use strict';
 
-  // ----- Before & after sliders -----
-  document.querySelectorAll('.ba-slider').forEach(function (slider) {
-    var range = slider.querySelector('.ba-range');
-    if (!range) return;
-    var update = function () { slider.style.setProperty('--pos', range.value + '%'); };
-    range.addEventListener('input', update);
-    update();
-  });
-
   // ----- ZIP check -----
   // TODO: Most ZIP codes in the Houston area start with "77". If you only serve
   // certain ZIPs, list them here instead, e.g. ['77536', '77502', '77571'].

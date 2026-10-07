@@ -59,28 +59,24 @@ All photos are in the `images` folder. The easiest way to swap a photo is to **u
 
 | File name | What it should be | Best size |
 |---|---|---|
-| `before-1.jpg`, `after-1.jpg` | Job #1 before & after (shown next to your services) | Same |
-| `before-2.jpg`, `after-2.jpg` | Job #2 before & after (Before & After section) | Same |
-| `before-3.jpg`, `after-3.jpg` | Job #3 before & after (Before & After section) | Same |
 | `og-image.jpg` | The preview picture when someone shares your link on Facebook or by text | Exactly 1200 × 630 |
 
 **The picture at the top of the page** is a drawing of a truck (`images/hero-illustration.svg`), so the site looks finished before you have photos. When you have a good photo of your truck or crew on a job:
 1. Name it `hero.jpg` and upload it to the `images` folder (landscape, about 1200 × 900).
 2. In `index.html`, search for `hero-illustration`. Right above it is a note with the exact line to paste in its place.
 
-**On phones,** the truck drawing and the before & after photos are hidden to keep the page short. They only show on computers and tablets. To show something on phones again, search `index.html` for `hide-on-phone` and delete that word from the element.
+**On phones,** the truck drawing is hidden to keep the page short. They only show on computers and tablets. To show something on phones again, search `index.html` for `hide-on-phone` and delete that word from the element.
 
 **How to upload:**
 1. Open the `images` folder on GitHub.
 2. Click **Add file → Upload files**.
-3. Drag in your photos. **Rename them on your computer first** so they match the names above (like `before-1.jpg`).
+3. Drag in your photos. **Rename them on your computer first** so they match the names above (like `og-image.jpg`).
 4. Click **Commit changes**.
 
 **Photo tips**
-- Take the before and after photos from the **same spot and angle**. The drag slider looks great when they line up.
 - Keep each photo under about **300 KB** so the site loads fast on phones. Before uploading, you can shrink photos for free at [squoosh.app](https://squoosh.app) or [tinypng.com](https://tinypng.com).
 - Photos must be `.jpg` (not `.jpeg`, `.png` or `.heic`). If your phone saves `.heic` files, squoosh.app can convert them.
-- After you add real photos, update the descriptions in `index.html`. Search for `alt="Before:` and `alt="After:` and describe what's actually in each photo, like *"Before: garage in Pasadena TX full of old furniture."* Also update the caption under each one (search `<figcaption>`). Google reads these descriptions, and they help visually impaired visitors.
+- When you add a photo to the page, give it a short description in its `alt="..."` text, like *"Garage in Pasadena TX after a full cleanout."* Google reads these descriptions, and they help visually impaired visitors.
 
 ---
 
